@@ -7,6 +7,8 @@ public class Launcher {
                 String input = scanner.nextLine();
                 if(!"quit".equals(input)){
                     System.out.println("unknown command");
+                }else if("quit".equals(input)){
+                    break;
                 }
             }   
         }
