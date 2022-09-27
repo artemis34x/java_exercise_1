@@ -74,11 +74,11 @@ public class Freq implements Command {
                 word3 = words.get(i);    
             }    
         }
-        System.out.println("3 most used words : "+word1+" "+word2+" "+word3);
+        System.out.println(word1+" "+word2+" "+word3);
         br.close();    
     } 
 
-    public String name(){ return "Freq"; }
+    public String name(){ return "freq"; }
 
     public boolean run(Scanner scanner){
         System.out.println("enter the text file path :");

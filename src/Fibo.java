@@ -11,7 +11,7 @@ public class Fibo implements Command{
         return fib(n - 1)
             + fib(n - 2);
     }
-    public String name(){ return "Fibo"; }
+    public String name(){ return "fibo"; }
     public boolean run(Scanner scanner){
         System.out.println("enter a number: ");
         int input = Integer.parseInt(scanner.nextLine());
@@ -21,7 +21,7 @@ public class Fibo implements Command{
             System.out.println("exiting...");
             return true;
         }
-        System.out.println("Fibo("+input+") = "+result);
+        System.out.println(result);
         return false;
 
     }
